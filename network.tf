@@ -1,6 +1,6 @@
 
 resource "azurerm_virtual_network" "main" {
-  name                = "${var.environment_name}-demo2dso-network"
+  name                = "${var.environment_name}-demo3dso-network"
   address_space       = ["10.0.0.0/16"]
   location            = azurerm_resource_group.main.location
   resource_group_name = azurerm_resource_group.main.name
@@ -25,7 +25,7 @@ resource "azurerm_public_ip" "pip" {
 }
 
 resource "azurerm_network_security_group" "main-nsg" {
-  name                = "${var.environment_name}-demo2dso-nsg"
+  name                = "${var.environment_name}-demo3dso-nsg"
   location            = azurerm_resource_group.main.location
   resource_group_name = azurerm_resource_group.main.name
 

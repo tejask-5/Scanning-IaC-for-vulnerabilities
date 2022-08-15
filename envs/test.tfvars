@@ -1,5 +1,5 @@
 deploy_region = "westeurope"
-resource_group_name = "demo2-shared-rg"
+resource_group_name = "demo3-shared-rg"
 environment_name = "test"
 
 sshAccess = "Deny" # Allow or Deny

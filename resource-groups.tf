@@ -1,6 +1,6 @@
 
 resource "azurerm_resource_group" "main" {
-  name     = "demo2-${var.environment_name}-rg"
+  name     = "demo3-${var.environment_name}-rg"
   location = var.deploy_region
 
   lifecycle {

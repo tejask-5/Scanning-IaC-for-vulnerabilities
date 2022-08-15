@@ -1,6 +1,6 @@
-# Managing GitHub secrets using terraform
+# Setting up nginx on Azure VMs behind Cloudflare using Terraform
 
-[video](https://www.youtube.com/watch?v=Su6r4zDpl5A)
+[video](https://www.youtube.com/watch?v=______________)
 
-[blog post](https://devstarops.com/blog/blogs/dev/2022/8/Managing-GitHub-secrets-using-terraform)
+[blog post](https://devstarops.com/blog/blogs/dev/2022/8/Setting-up-nginx-on-Azure-VMs-behind-Cloudflare-using-Terraform)
 

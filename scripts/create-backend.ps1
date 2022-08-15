@@ -1,6 +1,6 @@
-$SharedResourceGroup = "demo2-shared-rg"
+$SharedResourceGroup = "demo3-shared-rg"
 $DeployRegion = "westeurope"
-$SharedStorage = "demo2dso"
+$SharedStorage = "demo3dso"
 $SharedStorageContainer = "tfstate"
 
 az group create --resource-group $SharedResourceGroup --location $DeployRegion

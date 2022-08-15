@@ -34,3 +34,6 @@ envs/*.tfplan
 resources/*
 
 scripts/set-local-envs.ps1
+
+
+*.log
