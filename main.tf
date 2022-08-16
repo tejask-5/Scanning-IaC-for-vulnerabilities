@@ -4,6 +4,10 @@ terraform {
       source  = "hashicorp/azurerm"
       version = "=3.17.0"
     }
+    cloudflare = {
+      source  = "cloudflare/cloudflare"
+      version = "~> 3.0"
+    }
   }
 
   required_version = "= 1.2.4"
@@ -25,6 +29,22 @@ provider "github" {
 
 data "github_user" "current" {
   username = "devstarops"
+}
+
+provider "cloudflare" {
+  api_client_logging = false
+  api_user_service_key = var.cloudflare_service_key
+  api_token = var.cloudflare_api_token
+}
+
+variable "cloudflare_service_key" {
+  type = string
+  sensitive = true
+}
+
+variable "cloudflare_api_token" {
+  type = string
+  sensitive = true
 }
 
 output "tenant_id" {
