@@ -36,7 +36,9 @@ az login --identity
 
 # app
 sudo mkdir /var/app/
-sudo az storage blob directory download --container "appdata" --account-name $storage_account_name --source-path "*" --destination-path "/var/app/" --recursive
+sudo az storage blob directory download --container "demo" --account-name $storage_account_name --source-path "*" --destination-path "/var/app/" --recursive
+# sudo az storage blob directory download --container "demo" --account-name "demo3localdso" --source-path "*" --destination-path "/var/app/" --recursive
+
 
 # Debug Things
 # cat /etc/apt/sources.list

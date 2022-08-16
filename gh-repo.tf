@@ -1,6 +1,6 @@
 
 data "github_repository" "main" {
-  full_name = "DevStarOps-org/Managing-GitHub-secrets-using-terraform"
+  full_name = "DevStarOps-org/Setting-up-nginx-on-Azure-VMs-behind-Cloudflare-using-Terraform"
 }
 
 resource "github_repository_environment" "main" {
