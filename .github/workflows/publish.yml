@@ -29,7 +29,7 @@ jobs:
         with:
           azcliversion: 2.36.0
           inlineScript: |
-            az storage blob upload --account-name demo3${{ matrix.environment }}dso --file nginx.conf --container-name demo --name nginx.conf --overwrite
+            az storage blob upload --account-name demo3${{ matrix.environment }}dso --file src\nginx.conf --container-name demo --name nginx.conf --overwrite
 
       - name: logout
         uses: azure/CLI@v1
