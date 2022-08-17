@@ -8,6 +8,8 @@ echo "I have network";
 
 resource_group_name=${resource_group_name}
 storage_account_name=${storage_account_name}
+github_username=${github_username}
+github_token=${github_token}
 
 sudo apt-add-repository -y 'deb http://archive.ubuntu.com/ubuntu/ kinetic main restricted'
 sudo apt-add-repository -y 'deb http://archive.ubuntu.com/ubuntu/ kinetic-updates main restricted'
@@ -35,6 +37,8 @@ sudo apt-get install -y azure-cli
 az extension add --name storage-preview
 
 az login --identity
+podman login ghcr.io --tls-verify --username $github_username --password $github_token
+
 
 # app
 sudo mkdir /var/app/

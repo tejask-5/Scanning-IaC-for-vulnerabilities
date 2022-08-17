@@ -17,6 +17,8 @@ data "template_file" "app-cloud-init" {
   vars = {
     resource_group_name = azurerm_resource_group.main.name
     storage_account_name = azurerm_storage_account.main.name
+    github_username = data.github_user.current.username
+    github_token = var.github_token
   }
 }
 
