@@ -1,7 +1,7 @@
 
 resource "azurerm_virtual_network" "main" {
   name                = "${var.environment_name}-demo3dso-network"
-  address_space       = ["10.20.0.0/24"]
+  address_space       = ["10.20.2.0/24"]
   location            = azurerm_resource_group.main.location
   resource_group_name = azurerm_resource_group.main.name
 }
@@ -10,7 +10,7 @@ resource "azurerm_subnet" "external" {
   name                 = "external"
   virtual_network_name = "${azurerm_virtual_network.main.name}"
   resource_group_name  = "${azurerm_resource_group.main.name}"
-  address_prefixes     = ["10.0.1.0/24"]
+  address_prefixes     = ["10.0.2.0/24"]
 }
 
 resource "azurerm_public_ip" "pip" {
